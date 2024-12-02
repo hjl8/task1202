@@ -1,0 +1,275 @@
+/* 头部样式 */
+header {
+    height: 40px;
+    background-color: #2188b6;
+}
+
+header a {
+    line-height: 40px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header strong {
+    color: white;
+}
+
+/* 导航部分样式 */
+.navbar {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+.navbar div {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 95px;
+    height: 45px;
+    border: 1px solid #000;
+    margin-right: 20px;
+}
+
+.navbar .logo img {
+    width: 100%;
+}
+
+.navbar ul {
+    /* width: 300px; */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar div ul li a {
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar div ul li a:hover {
+    color: #000;
+}
+
+.navbar ul li a i {
+    display: block;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+/* banner部分样式 */
+.banner {
+    height: 410px;
+    padding: 32px 0;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 36px;
+}
+
+.banner ul {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.banner ul li:not(:last-child) {
+    margin: 15px;
+}
+
+.banner ul li:not(:last-child) a {
+    padding: 18px 36px;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid #1d6d92;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.banner ul li:not(:last-child) a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 0;
+}
+
+
+.banner ul li:last-child {
+    display: flex;
+    align-self: center;
+}
+
+.banner ul li:last-child a {
+    /* width: 50px; */
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0.3rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+
+}
+
+.banner ul li:last-child a:hover {
+    background-color: #eee;
+}
+
+.banner ul li:last-child a i {
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.banner p {
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.banner p a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    margin: 50px 0;
+    color: rgb(90, 90, 90);
+}
+
+.content .row {
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #6d767d;
+    font-size: 1.3rem;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content .hero .w {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.content .hero .w h2 {
+    font-size: 3rem;
+}
+
+.content .hero .w a {
+    padding: 1.3rem 1.5rem;
+    border: 2px solid #1d6d92;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+
+.content .hero .w a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 0;
+}
+
+.content .w ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .w ul li {
+    width: 24%;
+    padding-bottom: 2rem;
+}
+
+.content .w ul li h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #464a4c;
+}
+
+.content .w ul li p {
+    color: #6d767d;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* 底部样式 */
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li a {
+    display: inline-block;
+    color: #117cad;
+}
+
+footer ul li a:hover {
+    color: #0a4a67;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:1100px) {
+    .w {
+        width: 1100px;
+    }
+
+    .banner ul li {
+        display: block;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .w {
+        width: 768px;
+    }
+
+    .banner ul li:not(:last-child) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .w {
+        width: 100%;
+    }
+
+    .banner ul li:not(:last-child) {
+        display: none;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}

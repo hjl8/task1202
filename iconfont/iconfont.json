@@ -1,0 +1,37 @@
+{
+  "id": "4766661",
+  "name": "yarn",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4936985",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e882",
+      "unicode_decimal": 59522
+    },
+    {
+      "icon_id": "4937023",
+      "name": "facebook-fill",
+      "font_class": "facebook-fill",
+      "unicode": "e88d",
+      "unicode_decimal": 59533
+    },
+    {
+      "icon_id": "25763820",
+      "name": "discord",
+      "font_class": "discord",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "28854082",
+      "name": "gitub",
+      "font_class": "gitub",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    }
+  ]
+}
