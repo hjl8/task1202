@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    【数组去重】编写⼀个函数，接受⼀个数组作为输⼊，并返回⼀个去除重复元素后的新数组，
+    需要两种⽅法。
+    <script>
+        toUnique1([1, 1, 1, 2, 3, 4, 3, 2]); // [1,2,3]
+        toUnique2([1, 1, 1, 2, 3, 4, 3, 2]); // [1,2,3]
+        function toUnique1(arr) {
+            let newArr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (newArr.indexOf(arr[i]) === -1) {
+                    newArr.push(arr[i]);
+                }
+            }
+            console.log(newArr);
+            return newArr;
+        }
+        function toUnique2(arr) {
+            let newArr = [];
+            for (let i = 0; i < arr.length; i++) {
+                let flag = true;
+                for (let j = 0; j < newArr.length; j++) {
+                    if (newArr[j] == arr[i]) {
+                        flag = false;
+                    }
+                }
+                if (flag) {
+                    newArr.push(arr[i])
+                }
+            }
+            console.log(newArr);
+            return newArr;
+        }
+    </script>
+</body>
+
+</html>
