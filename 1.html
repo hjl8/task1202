@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    【字符串替换】编写⼀个函数，接收三个参数：原字符串、待替换的⼦字符串以及替换后的⼦
+    字符串。函数应返回将原字符串中所有待替换的⼦字符串替换为替换后的⼦字符串的结果。
+    <script>
+        replaceString("hello world", "world", "there");
+        replaceString("abc abc abc", "abc", "123");
+        function replaceString(str, temp, newStr) {
+            let res = '', arr = str.split(' ');
+            // index=str.indexOf(temp);
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === temp) {
+                    res += ' ' + newStr;
+                } else {
+                    res += ' ' + arr[i];
+                }
+            }
+            console.log(res)
+            return res;
+        }
+    </script>
+</body>
+
+</html>

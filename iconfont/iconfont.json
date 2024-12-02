@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11155776",
+      "name": "yarn",
+      "font_class": "yarn",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11865441",
+      "name": "yarn",
+      "font_class": "yarn1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "4936985",
       "name": "twitter",
       "font_class": "twitter",

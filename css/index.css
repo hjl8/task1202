@@ -30,14 +30,15 @@ header strong {
 }
 
 .navbar .logo {
-    width: 95px;
     height: 45px;
-    border: 1px solid #000;
+    line-height: 45px;
     margin-right: 20px;
+    text-align: center;
 }
 
-.navbar .logo img {
-    width: 100%;
+.navbar .logo i {
+    font-size: 2rem;
+    color: #2c8ebb;
 }
 
 .navbar ul {
@@ -64,7 +65,7 @@ header strong {
 .navbar ul li a i {
     display: block;
     font-size: 2rem;
-    color: #ccc;
+    color: #666;
 }
 
 /* banner部分样式 */
